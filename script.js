@@ -4,7 +4,7 @@ function showAlert() {
 
 function openInstagram() {
     
-    var instagramURL = "https://www.instagram.com/its_kumailrazas/";
+    var instagramURL = "https://www.instagram.com/kumailrazas?igsh=NmI2ZWI1bDR4Ync1";
     window.open(instagramURL, '_blank');
 }
 
