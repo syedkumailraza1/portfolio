@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syed Kumail Raza</title>
+    <link rel="icon" href="images/logo.png" type="image/x-icon">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-brands/css/uicons-brands.css'>
+
+</head>
+<style>
+    /* Custom scrollbar */
+    /* Width */
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: black;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #555;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+</style>
+<body  class="bg-black  text-white">
+
+    <nav class="fixed z-30 mb-20 bg-black w-full flex overflow-hidden">
+        <button class="bg-[#14131a] text-white border-none px-4 py-2 m-5 ml-auto rounded text-base cursor-pointer md:hidden" id="toggleSidebar">
+            <i class="fas fa-bars"></i>
+        </button>
+        <button class="bg-green-500 text-white border-none px-4 py-2 m-5 ml-auto rounded text-base cursor-pointer hidden md:block">Download CV</button>
+        <a href="https://www.instagram.com/kumailrazas?igsh=NmI2ZWI1bDR4Ync1" target="_blank">
+            <img src="images/instagram.png" alt="" id="insta">
+        </a>
+    </nav>
+
+
+    <div class="flex items-center justify-center">
+<div class="left">
+    <div class="sidebar ml-8 mt-20 fixed top-0 left-0 h-screen w-64 bg-[#1c1b23] pt-4 hidden md:block">
+        <a href="#home" class="block ml-10 mt-5 mb-5 px-4 py-1 text-2xl text-[#8b8a91] font-roboto hover:text-white">
+            <i class="fas fa-home mr-2"></i> Home
+        </a>
+        <a href="#trending" class="block ml-10 mt-5 mb-5 px-4 py-1 text-2xl text-[#8b8a91] font-roboto hover:text-white">
+            <i class="fas fa-fire mr-2"></i> Trending
+        </a>
+        <a href="#Snippet" class="block ml-10 mt-5 mb-5 px-4 py-1 text-2xl text-[#8b8a91] font-roboto hover:text-white">
+            <i class="fas fa-code mr-2"></i> Snippet
+        </a>
+        <a href="#videos" class="block ml-10 mt-5 mb-5 px-4 py-1 text-2xl text-[#8b8a91] font-roboto hover:text-white">
+            <i class="fas fa-video mr-2"></i> Videos
+        </a>
+    
+        <h3 class="text-[#8b8a91] ml-7 mt-10 font-roboto">Socials</h3>
+        <a href="https://www.instagram.com/its_kumailrazas/" target="_blank" class="block ml-10 mt-5 mb-5 px-4 py-1 text-2xl text-[#8b8a91] font-roboto hover:text-white">
+            <i class="fi fi-brands-instagram mr-2"></i> Instagram
+        </a>
+        <a href="https://github.com/syedkumailraza1" target="_blank" class="block ml-10 mt-5 mb-5 px-4 py-1 text-2xl text-[#8b8a91] font-roboto hover:text-white">
+            <i class="fi fi-brands-github mr-2"></i> Github
+        </a>
+        <a href="https://www.linkedin.com/in/syed-kumail-raza-265057239/" target="_blank" class="block ml-10 mt-5 mb-5 px-4 py-1 text-2xl text-[#8b8a91] font-roboto hover:text-white">
+            <i class="fi fi-brands-linkedin mr-2"></i> Linkedin
+        </a>
+    </div>
+</div>
+
+<div class="right ml-0 md:ml-[20%]">
+    
+        <div class="main flex justify-center items-center">
+            <div class="name flex flex-col md:flex-row mt-20  bg-cover bg-no-repeat w-full md:w-[67rem] w-[24rem] h-[150px]" style="background-image: url('/images/namebg.webp'); padding-left: 10px; padding-right: 20px;">
+                <img src="/images/me.jpg" alt="" class="mt-5 mb-2.5 ml-7 md:ml-0 rounded-full border-4 border-white w-24 md:w-[11%] h-[80%]">
+                
+                <div class="flex flex-col md:flex-row justify-center md:justify-between items-center w-full md:w-[65rem] h-[150px] md:ml-10 md:mt-0">
+                    <div class="sec1 ml-28 md:ml-8 md:mr-auto mt-[-125px] md:mt-0">
+                        <h1 class="text-2xl">Syed Kumail Raza</h1>
+                        <p class="">@UnknownDev</p>
+                    </div>
+                    <button onclick="openInstagram()" class="mt-3 md:mt-0 md:ml-8 ml-10 h-10 px-5 rounded-lg bg-blue-500 text-white hover:bg-blue-600">
+                        Follow Me
+                    </button>
+                </div>
+            </div>
+        </div>
+    
+        <h1 class="mt-5 ml-5 md:ml-10 font-bold text-xl">Projects</h1>
+        <div class="projects mt-5 ml-5 md:ml-10 snap-x snap-mandatory overflow-hidden">
+        
+            <div class="cards md:flex md:gap-2 mr-5"> 
+                <div class="pro mt-5 pb-2.5 bg-white mr-5 w-full md:w-[300px] border border-black rounded-lg snap-start">
+                    <img src="/images/securedverse.png" alt="SecuredVerse" class="w-full h-[150px] rounded-t-lg">
+                    <h3 class="ml-2.5 mt-2.5 text-black md:w-[300px] font-bold text-lg">SecuredVerse</h3>
+                    <p class="text-black md:w-[500px] p-2.5 rounded-lg  text-sm">React.Js, Node.js, Express, Tailwind CSS</p>
+                </div>
+        
+                <div class="pro mt-5 pb-2.5 bg-white mr-5 w-full md:w-[300px] border border-black rounded-lg snap-start">
+                    <img src="/images/chor_police.jpg" alt="Chor Police" class="w-full h-[150px] rounded-t-lg">
+                    <h3 class="ml-2.5 mt-2.5 text-black md:w-[300px] font-bold text-lg">Chor Police</h3>
+                    <p class="text-black md:w-[500px] p-2.5 rounded-lg text-sm">Flutter Flames</p>
+                </div>
+                
+                <div class="pro mt-5 pb-2.5 bg-white mr-5 w-full md:w-[300px] border border-black rounded-lg snap-start">
+                    <img src="/images/Mighty Fitness.webp" alt="Mighty Fitness" class="w-full h-[150px] rounded-t-lg">
+                    <h3 class="ml-2.5 mt-2.5 text-black md:w-[300px] font-bold text-lg">Mighty Fitness</h3>
+                    <p class="text-black md:w-[500px] p-2.5 rounded-lg text-sm">Html 5, CSS 3, Javascript</p>
+                </div>
+            </div>
+        </div>
+                
+    
+<h2 class="mt-12 md:ml-10 font-bold text-xl">Tech I Know</h2>
+<div class="skills mt-5 md:ml-14 mb-5 ">
+    <div class="md:flex">
+    <div class="skill pt-5 pb-2.5 bg-[#1c1b23] mr-6 px-5 md:w-[190px] w-[360px] m-8 md:h-[300px] h-52">
+        <h3 class="text-white">Web-Dev</h3>
+        <div class="techstack md:block flex">
+            <div class="flex">
+                <p class="mt-5 text-center w-[110px] px-5 rounded-lg bg-[#14131a] text-white p-3">HTML</p>
+            <p class="mt-5 text-center w-[110px] px-5 rounded-lg bg-[#14131a] text-white p-3 ml-2">CSS</p>
+            </div>
+             <p class="mt-5 text-center w-[110px] px-5 rounded-lg bg-[#14131a] border border-[#e9e583] ml-2 text-white p-3">Tailwind</p>
+           
+        </div>
+        <p class="mt-5 text-center w-[110px] px-5 rounded-lg bg-[#14131a] border border-[#138cc1] ml-2 text-white p-3">Javascript</p>
+    </div>
+    <div class="skill pt-5 pb-2.5 bg-[#1c1b23] mr-6 px-5 md:w-[190px] w-[360px]  m-8  md:h-[300px] h-52">
+        <h3 class="text-white">Backend</h3>
+        <div class="techstack  md:block flex">
+            <p class="mt-5 text-center w-[110px] px-5 rounded-lg bg-[#14131a] text-white p-3 ml-2">Node Js</p>
+            <p class="mt-5 text-center w-[110px] px-5 rounded-lg bg-[#14131a] text-white p-3 ml-2">Express Js</p>
+            <p class="mt-5 text-center w-[110px] px-5 rounded-lg bg-[#14131a] text-white p-3 border ml-2 border-[#e4a561e7]">.Net</p>
+        </div>
+    </div>
+    <div class="skill pt-5 pb-2.5 bg-[#1c1b23] mr-6  px-5  md:w-[190px] w-[360px]  m-8  md:h-[300px] h-52">
+        <h3 class="text-white">App-Dev</h3>
+        <div class="techstack md:block flex">
+            <div class="flex">
+                <p class="mt-5 text-center w-[110px] px-5 rounded-lg bg-[#14131a] border border-[#b84adc] text-white p-3">Java</p>
+                <p class="mt-5 text-center w-[110px] px-5 rounded-lg bg-[#14131a] ml-3 text-white p-3">XML</p>
+            </div>
+            <p class="mt-5 text-center w-[110px] px-5 rounded-lg bg-[#14131a] border border-[#138cc1] text-white p-3">Flutter</p>
+            
+        </div>
+    </div>
+    <div class="skill pt-5 pb-2.5 bg-[#1c1b23] mr-6 px-5 md:w-[190px] w-[360px]  m-8  md:h-[300px] h-52">
+        <h3 class="text-white">Database</h3>
+        <div class="techstack md:block flex">
+            <p class="mt-5 text-center w-[110px] px-5 rounded-lg bg-[#14131a] text-white p-3">MySQL</p>
+            <p class="mt-5 text-center w-[110px] px-5 rounded-lg bg-[#14131a] text-white p-3">SQLite</p>
+            <p class="mt-5 text-center w-[110px] px-5 rounded-lg bg-[#14131a] text-white p-3  border border-[#dcae4a]">Firebase</p>
+        </div>
+    </div>
+</div>
+
+</div>
+    
+</div>
+    </div>
+    
+    
+    
+
+  
+
+    
+
+
+
+
+
+
+<script>
+    const toggleSidebar = () => {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.classList.toggle('hidden');
+    };
+
+    const toggleSidebarButton = document.getElementById('toggleSidebar');
+    toggleSidebarButton.addEventListener('click', toggleSidebar);
+</script>
+
+</body>
+
+</html>
